@@ -1,9 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jan 23 21:12:12 2025
 
-@author: priyalshah
+"""
+Created on Thu NOV 07 21:12:12 2025
+
+@author: Hemant Rathore
 """
 
 import streamlit as st
@@ -13,13 +12,13 @@ import seaborn as sns
 
 # Page configuration
 st.set_page_config(
-    page_title="Netflix Content Analysis",
+    page_title="Netflix Movies Analysis",
     page_icon="🎬",
     layout="wide"
 )
 
 # Title and description
-st.title("Netflix Content Analysis - Data Analysis and Visualization")
+st.title("Netflix Movies Analysis - Data Analysis and Visualization")
 st.markdown("An analysis of Netflix's movie catalog exploring various trends and patterns")
 
 # Loading the data
@@ -173,4 +172,4 @@ st.dataframe(filtered_df)
 
 # Footer
 st.markdown("---")
-st.markdown("Created with ❤️ using Streamlit")
+st.markdown("Created with ❤️ using Streamlit by Hemant Rathore")
