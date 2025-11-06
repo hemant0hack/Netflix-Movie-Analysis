@@ -25,14 +25,14 @@ st.markdown("An analysis of Netflix's movie catalog exploring various trends and
 # Loading the data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("netflix_data.csv")
+    df = pd.read_csv("netflix.csv")
     return df
 
 try:
     netflix_df = load_data()
     st.success("Data loaded successfully!")
 except:
-    st.error("Error: Please ensure netflix_data.csv is in the same directory")
+    st.error("Error: Please ensure netflix.csv is in the same directory")
     st.stop()
 
 # Sidebar filters
