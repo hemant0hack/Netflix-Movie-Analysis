@@ -1,38 +1,76 @@
-# [Netflix Movies Analysis - Data Analysis and Visualization](https://netflixmoviesanalysis.streamlit.app/)
-#### A comprehensive data analysis project exploring Netflix's content catalog using Python, focusing on various trends and patterns in movies and TV shows. 
+# <h1 align="center">🎥<br>[Netflix Movies Analysis - Data Analysis and Visualization](https://netflixmoviesanalysis.streamlit.app/)</h1>
 
-### Project Overview
-#### This project analyzes Netflix's content library using data visualization and statistical analysis to uncover insights about movie durations, content distribution, and production trends. The analysis is presented through an interactive Streamlit dashboard (https://netflixmoviesanalysis.streamlit.app/)
+## Overview 📋
+![Front_Page](<Images/1.png>)
+A comprehensive data analysis project exploring Netflix's content catalog using Python, focusing on various trends and patterns in movies and TV shows.<br>
 
-### Key Features
-#### - Distribution analysis of movie durations across different genres and decades
-#### - Top content-producing countries visualization with percentage breakdown
-#### - Correlation analysis between release years and cast sizes
-#### - Genre-based content distribution analysis
-#### - Word cloud visualization of movie titles
-#### - Interactive filters for year range and genre selection
+This project analyzes Netflix's content library using data visualization and statistical analysis to uncover insights about movie durations, content distribution, and production trends. The analysis is presented through an interactive Streamlit dashboard (https://netflixmoviesanalysis.streamlit.app/)
 
-### Technologies Used
-#### 1. Python
-#### 2. Pandas for data manipulation
-#### 3. Matplotlib and Seaborn for data visualization
-#### 4. Streamlit for interactive dashboard
-#### 5. WordCloud for text visualization
+## Features ✨
+- Interactive filters (year range, genre)
+- Distribution plots for movie durations
+- Genre distribution bar chart
+- Top countries producing content with percentage labels
+- Boxplots of duration by genre
+- Scatter plot showing relation between release year and cast size
+- Word cloud of common words in titles
+- Data table for exploration
+## Installation 🛠️
+### Quick start (run locally)
 
-### Questions addressed:
-#### - What was the most frequent duration of movies released in the 1990s?
-#### - How many action movies with a duration less than 90 minutes were released in the 1990s?
-#### - What is the distribution of movie durations across different genres in the 1990s?
-#### - How has the average duration of movies changed over the decades?
-#### - What are the top 10 countries producing the most content on Netflix?
-#### - Is there a relationship between the release year and the number of cast members in Netflix movies?
-#### - What are the most common words in movie titles for different genres?
+1. Create and activate a virtual environment (recommended):
 
-### Data Source
-#### The analysis is based on the Netflix content dataset (netflix_data.csv) containing information about movies and TV shows, including:
-#### - Show ID, type, title, director, cast
-#### - Country of origin
-#### - Release year
-#### - Duration
-#### - Genre
-#### - Description
+Windows (PowerShell):
+
+```powershell
+python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1
+```
+
+2. Install dependencies:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+3. Start the Streamlit app:
+
+```powershell
+streamlit run app.py
+```
+
+4. Open the browser at: `http://localhost:8501`
+
+## Requirements
+
+This project uses Python 3.8+ and the following packages (see `requirements.txt`):
+
+- streamlit
+- pandas
+- matplotlib
+- numpy
+- seaborn
+- wordcloud
+
+
+
+## Files of interest
+
+- `app.py` — main Streamlit application
+- `netflix.csv` — dataset used by the app (should sit in the repo root)
+- `assets/` — contains `netflix_logo.png` and optional Lottie JSON
+
+## Notes & troubleshooting
+
+- If the app fails to start due to missing packages, run the install command above again.
+- If images don't load, confirm the `assets/` directory exists and contains `netflix_logo.png`.
+- The repository previously contained an unrelated README; this file now documents the Netflix Movies Analysis project.
+
+## Contributing
+
+Contributions welcome — open an issue or submit a PR.
+
+## Contact
+
+For questions: hemant0hack@gmail.com
+
+
